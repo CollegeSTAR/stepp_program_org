@@ -1,0 +1,21 @@
+{
+  "name": "stepp_program_org",
+  "homepage": "https://github.com/CollegeSTAR/stepp_program_org",
+  "authors": [
+    "Joel Tanner Jones <jonesjoe@ecu.edu>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "^2.2.12"
+  }
+}
