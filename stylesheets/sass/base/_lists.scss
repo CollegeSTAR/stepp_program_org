@@ -1,8 +1,18 @@
 ul,
 ol {
   list-style-type: none;
-  margin: 0;
+  margin: gutter();
   padding: 0;
+
+  li {
+    text-index: -gutter();
+
+    &:before {
+      margin-right: gutter();
+      content: "\002022";
+      color: #FFC425;
+    }
+  }
 }
 
 dl {

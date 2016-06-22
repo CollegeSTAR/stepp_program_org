@@ -100,8 +100,16 @@ select {
 ul,
 ol {
   list-style-type: none;
-  margin: 0;
+  margin: 1.69492%;
   padding: 0; }
+  ul li,
+  ol li {
+    text-index: -gutter(); }
+    ul li:before,
+    ol li:before {
+      margin-right: 1.69492%;
+      content: "\002022";
+      color: #FFC425; }
 
 dl {
   margin-bottom: 0.75em; }
@@ -253,10 +261,21 @@ i {
       font-size: 1.5em;
       font-weight: normal;
       color: #482783; }
-    #introduction_wrapper #toc ul li {
-      margin-top: 1.69492%;
-      margin-bottom: 1.69492%;
-      font-weight: bold; }
+    #introduction_wrapper #toc ul {
+      list-style-type: none; }
+      #introduction_wrapper #toc ul li {
+        text-index: 0;
+        margin-top: 1.69492%;
+        margin-bottom: 1.69492%;
+        font-weight: bold; }
+        #introduction_wrapper #toc ul li a {
+          color: #333; }
+          #introduction_wrapper #toc ul li a:hover {
+            color: #000; }
+        #introduction_wrapper #toc ul li:before {
+          margin-right: 0;
+          content: "";
+          color: none; }
   #introduction_wrapper #introduction {
     width: 74.57627%;
     float: right;
