@@ -1,0 +1,29 @@
+ul,
+ol {
+  list-style-type: none;
+  margin: gutter();
+  padding: 0;
+
+  li {
+    text-index: -gutter();
+
+    &:before {
+      margin-right: gutter();
+      content: "\002022";
+      color: #FFC425;
+    }
+  }
+}
+
+dl {
+  margin-bottom: $small-spacing;
+
+  dt {
+    font-weight: 600;
+    margin-top: $small-spacing;
+  }
+
+  dd {
+    margin: 0;
+  }
+}
