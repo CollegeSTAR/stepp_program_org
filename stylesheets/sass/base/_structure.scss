@@ -55,8 +55,6 @@
 
 #introduction_wrapper {
   @include span(12 of 12);
-  margin-right: gutter();
-  margin-left: gutter();
   margin-bottom: 2 * gutter();
 
   #toc {
@@ -64,6 +62,7 @@
     border-right: $toc-border;
 
     h1 {
+      margin-left: gutter();
       font-size: $toc-header-font-size;
       font-weight: normal;
       color: $purple;

@@ -250,14 +250,13 @@ i {
   float: left;
   margin-left: 0;
   margin-right: 0;
-  margin-right: 1.69492%;
-  margin-left: 1.69492%;
   margin-bottom: 3.38983%; }
   #introduction_wrapper #toc {
     width: 23.72881%;
     float: left;
     border-right: 3px solid #482783; }
     #introduction_wrapper #toc h1 {
+      margin-left: 1.69492%;
       font-size: 1.5em;
       font-weight: normal;
       color: #482783; }
