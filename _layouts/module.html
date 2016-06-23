@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<div id="toc">
+  <h1>MENU</h1>
+  <ul>
+{% for item in page.menu-items %}
+  <li><a href="#{{item[0]}}">{{item[1]}}</a></li>
+{% endfor %}
+  </ul>
+</div>
+
+{{ content }}
