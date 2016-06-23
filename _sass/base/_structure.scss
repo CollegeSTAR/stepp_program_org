@@ -151,20 +151,24 @@
   }
 }
 
+.parent_info_wrapper {
+  @include span(12 of 12 no-gutters);
+  margin: gutter() 0;
 
-.parent_info_box {
-  width: span(8.5 no-gutters);
-  border: $parent-info-box-border;
-  margin: 0 auto;
-  clear: both;
-
-  h1 {
-    text-align: center;
-    margin: 0;
-    padding: gutter();
-  }
-  p {
-    padding: 0 gutter() gutter() gutter();
+  .parent_info_box {
+    width: span(8.5 no-gutters);
+    border: $parent-info-box-border;
+    margin: gutter() auto;
+    clear: both;
+  
+    h1 {
+      text-align: center;
+      margin: 0;
+      padding: gutter();
+    }
+    p {
+      padding: 0 gutter() gutter() gutter();
+    }
   }
 }
 
@@ -188,6 +192,7 @@
     td {
       border: $table-border;
       padding: gutter();
+      vertical-align: top;
     }
   }
 }
