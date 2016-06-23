@@ -10,7 +10,8 @@ ol {
     &:before {
       margin-right: gutter();
       content: "\002022";
-      color: #FFC425;
+      color: $yellow;
+      font-weight: bold;
     }
   }
 }

@@ -24,7 +24,9 @@ $black: #000;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
+$white: #FFF;
 $purple: #482783;
+$yellow: #FFC425;
 
 // Font Colors
 $base-font-color: $dark-gray;
@@ -35,6 +37,9 @@ $base-border-color: $light-gray;
 $base-border: 1px solid $base-border-color;
 $header-border: 10px solid $purple;
 $toc-border: 3px solid $purple;
+$info-box-border: $toc-border;
+$parent-info-box-border: 1em solid $yellow;
+$table-border: 1px solid $dark-gray;
 
 // Background Colors
 $base-background-color: #fff;

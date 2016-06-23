@@ -91,6 +91,11 @@
 
   #introduction {
     @include span(9 of 12 at 4);
+
+    h2 {
+      font-size: $base-font-size;
+      margin: gutter() 0;
+    }
   }
 
 .module_section {
@@ -98,4 +103,91 @@
   margin-left: gutter();
   margin-right: gutter();
   margin-top: 2 * gutter();
+}
+
+.image_wrapper {
+  width: span(12);
+  text-align: center;
+  margin: gutter() 0;
+  clear: both;
+}
+
+.info_box {
+  @include info_box();
+  border: $info-box-border;
+  padding: 2 * gutter();
+
+  h1 {
+    font-weight: normal;
+    margin-top: -3 * gutter();
+  }
+}
+
+.comparision_wrapper {
+  @include span(12 of 12 no-gutters);
+  margin: gutter();
+  clear: both;
+
+  .comparison_box {
+    width: span(8);
+    margin: 2* gutter() auto;
+    clear: both;
+  
+    h1 {
+      background-color: $purple;
+      text-align: center;
+      color: $yellow;
+      font-weight: normal;
+      padding: gutter();
+    }
+    .left_column {
+      @include span(6 of 12 no-gutters);
+      clear: left;
+    }
+    .right_column {
+      @include span(6 of 12 at 7 no-gutters);
+      clear: right;
+    }
+  }
+}
+
+
+.parent_info_box {
+  width: span(8.5 no-gutters);
+  border: $parent-info-box-border;
+  margin: 0 auto;
+  clear: both;
+
+  h1 {
+    text-align: center;
+    margin: 0;
+    padding: gutter();
+  }
+  p {
+    padding: 0 gutter() gutter() gutter();
+  }
+}
+
+.table_wrapper {
+  width: span(8.5);
+  margin: gutter() auto;
+  clear: both;
+
+  table {
+    @include span(12 of 12);
+    border-collapse: collapse;
+
+    tr:first-child {
+      background-color: $purple;
+    }
+    th {
+      color: $yellow;
+      text-align: center;
+      border: $table-border;
+    }
+    td {
+      border: $table-border;
+      padding: gutter();
+    }
+  }
 }

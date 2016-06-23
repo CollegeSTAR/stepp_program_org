@@ -1,0 +1,5 @@
+@mixin info_box() {
+  width: span(8);
+  margin: gutter() auto;
+  clear: both;
+}
