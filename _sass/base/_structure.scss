@@ -95,6 +95,10 @@
   #introduction {
     @include span(9 of 12 at 4);
 
+    h1 {
+      border-bottom: 1px solid $purple;
+    }
+
     h2 {
       font-size: $base-font-size;
       margin: gutter() 0;
@@ -212,4 +216,9 @@
       vertical-align: top;
     }
   }
+}
+
+.video_wrapper {
+  @include span(12 of 12 no-gutters);
+  text-align: center;
 }
