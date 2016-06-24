@@ -9,18 +9,20 @@
  
   #header_left {
     @include span(8 of 12 no-gutters);
+    
     h1 {
-      font-size: $header-font-size;
-      margin-left: gutter();
-      margin-bottom: 0;
+      width: span(12 of 12 no-gutters);
+      margin: gutter() 0;
+      font-size: $header-title-font-size;
     }
   }
+
   #header_right {
     @include span(4 of 12 at 9);
 
     #text_wrapper {
       @include span(10 of 12 no-gutters);
-      margin-top: 1em;
+      margin-top: 1.25em;
 
       h1 {
         vertical-align: bottom;
@@ -64,6 +66,7 @@
     color: $purple;
   }
   ul {
+    margin-left: gutter();
     list-style-type: none;
   
     li {
@@ -99,10 +102,18 @@
   }
 
 .module_section {
-  @include span(12 of 12);
-  margin-left: gutter();
-  margin-right: gutter();
+  @include span(12 of 12 no-gutters);
   margin-top: 2 * gutter();
+
+  h1 {
+    border-bottom: 1px solid $purple;
+  }
+
+  h2 {
+    width: span(9);
+    margin: 2 * gutter() auto;
+    border-bottom: 1px solid $purple;
+  }
 }
 
 .image_wrapper {
@@ -120,6 +131,7 @@
   h1 {
     font-weight: normal;
     margin-top: -3 * gutter();
+    border: none;
   }
 }
 
@@ -139,6 +151,7 @@
       color: $yellow;
       font-weight: normal;
       padding: gutter();
+      border: none;
     }
     .left_column {
       @include span(6 of 12 no-gutters);
@@ -165,6 +178,7 @@
       text-align: center;
       margin: 0;
       padding: gutter();
+      border: none;
     }
     p {
       padding: 0 gutter() gutter() gutter();
@@ -177,6 +191,9 @@
   margin: gutter() auto;
   clear: both;
 
+  h1 {
+    border: none;
+  }
   table {
     @include span(12 of 12);
     border-collapse: collapse;
