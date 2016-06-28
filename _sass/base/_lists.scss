@@ -16,6 +16,28 @@ ol {
   }
 }
 
+ol {
+  list-style-type: decimal;
+
+  li {
+    &:before {
+      margin-right: gutter();
+      content: "";
+      color: $dark-gray;
+    }
+    ul {
+      li {
+          &:before {
+          margin-right: gutter();
+          content: "\002022";
+          color: $yellow;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
 dl {
   margin-bottom: $small-spacing;
 
