@@ -1,5 +1,6 @@
-#Stepp Program Transition Curriculum Family Planning Modules
+#STEPP Program Transition Curriculum Family Planning Modules
 
+The STEPP Program Transition Curriculum Family Planning Modules use [Jekyll](http://www.jekyllrb.com) to generate the family modules which are located at [http://www.stepp-program.org](http://www.stepp-program.org).
 ##Dependencies
 1. Ruby
 2. Bundler (gem install bundler)
