@@ -40,6 +40,15 @@ ol {
 
 ul.no-bullets {
   list-style-type: none;
+
+  li {
+    text-indent: 0;
+
+    &:before {
+      margin-right: 0;
+      content: "";
+    }
+  }
 }
 
 dl {
