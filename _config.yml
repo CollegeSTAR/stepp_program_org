@@ -19,10 +19,10 @@ url: "http://www.stepp-program.org" # the base hostname & protocol for your site
 markdown: kramdown
 
 sass:
-    load_paths: 
+    load_paths:
         - _sass
         - bower_components
 
 gems: [bourbon]
 
-exclude: [Gemfile, Gemfile.lock, bower.json, bower_components]
+exclude: [Gemfile, Gemfile.lock, bower.json, bower_components, style_template.html]
