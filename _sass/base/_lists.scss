@@ -38,6 +38,10 @@ ol {
   }
 }
 
+ul.no-bullets {
+  list-style-type: none;
+}
+
 dl {
   margin-bottom: $small-spacing;
 
