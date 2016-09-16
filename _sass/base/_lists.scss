@@ -5,13 +5,44 @@ ol {
   padding: 0;
 
   li {
-    text-index: -gutter();
+    text-indent: - .7em;
+    margin-left: 1em;
 
     &:before {
       margin-right: gutter();
       content: "\002022";
       color: $yellow;
       font-weight: bold;
+    }
+  }
+}
+
+.info_box {
+  ul, ol {
+    li {
+      text-indent: -1.2em;
+    }
+  }
+}
+
+.parent_info_box {
+  ul, ol {
+    li {
+      text-indent: -1.25em;
+      margin-left: 1.3em;
+
+      li {
+        text-indent: -1em;
+        margin-left: 1em;
+      }
+    }
+  }
+}
+
+table {
+  ul, ol {
+    li {
+      text-indent: -.85em;
     }
   }
 }
