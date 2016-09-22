@@ -127,6 +127,18 @@
   clear: both;
 }
 
+.image_insert_wrapper {
+  @include span(12);
+  @include clearfix;
+
+  .left_column {
+    @include span(8 of 12 no-gutters);
+  }
+  .right_column {
+    @include span(4 of 12 at 9 no-gutters);
+  }
+}
+
 .info_box {
   @include info_box();
   border: $info-box-border;
@@ -136,6 +148,17 @@
     font-weight: normal;
     margin-top: gutter();
     border: none;
+  }
+
+  .two_column_wrapper {
+    @include span(12 of 12 no-gutters);
+
+    .left_column {
+      @include span(6 of 12 no-gutters);
+    }
+    .right_column {
+      @include span( 6 of 12 at 7 no-gutters);
+    }
   }
 }
 
