@@ -252,3 +252,9 @@
 .right_inset {
   @include span(5 of 12 at 8 no-gutters);
 }
+
+.left_inset {
+  float: left;
+  margin: gutter();
+  margin-top: 0;
+}
