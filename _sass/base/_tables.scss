@@ -28,4 +28,10 @@ table.no-border {
     border-top: $table-row-total-border;
     font-weight: bold;
   }
+  tr.no-border {
+    border: none;
+    td {
+      border: none;
+    }
+  }
 }
