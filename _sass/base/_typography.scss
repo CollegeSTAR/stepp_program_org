@@ -63,3 +63,9 @@ picture {
 i {
   color: $purple;
 }
+
+cite {
+ color: $medium-gray;
+ font-size: .75 * $base-font-size;
+ margin-top: 2 * gutter();
+}
