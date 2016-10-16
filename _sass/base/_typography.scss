@@ -35,6 +35,10 @@ p {
   margin: 0 0 $small-spacing;
 }
 
+p.center {
+  text-align: center;
+}
+
 a {
   color: $action-color;
   text-decoration: none;
