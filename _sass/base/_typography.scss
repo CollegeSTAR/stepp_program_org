@@ -26,6 +26,11 @@ h2 {
   margin-top: 2 * gutter();
 }
 
+.info_box h2.no_underline {
+  border-bottom: none;
+  text-align: center;
+}
+
 p {
   margin: 0 0 $small-spacing;
 }
