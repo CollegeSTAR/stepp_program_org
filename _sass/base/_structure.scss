@@ -264,3 +264,10 @@
   margin: gutter();
   margin-top: 0;
 }
+
+.highlight {
+  margin: 2 * gutter();
+  padding: gutter();
+  background-color: $light-purple;
+  border: $highlight-border;
+}
