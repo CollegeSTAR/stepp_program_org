@@ -51,11 +51,19 @@ ol {
   list-style-type: decimal;
 
   li {
+    padding: gutter();
+   
     &:before {
       margin-right: gutter();
       content: "";
       color: $dark-gray;
     }
+
+    p {
+      margin: gutter() 0;
+      text-indent: 0;
+    }
+
     ul {
       li {
           &:before {
