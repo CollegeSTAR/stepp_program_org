@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>INDEXFILE</key>
+	<string>index.html</string>
+	<key>PackageFloder</key>
+	<string>FOR_WINDOWS</string>
+	<key>ICD_PackageName</key>
+	<string>ICD_Guide_Package</string>
+	<key>srcPath</key>
+	<string>common</string>
+	<key>SHORTCUTINDEXFILENAME</key>
+	<string>HelpGuide.html</string>
+</dict>
+</plist>
