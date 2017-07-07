@@ -3,3 +3,10 @@
   margin: gutter() auto;
   clear: both;
 }
+
+@mixin caption($width: 560px) {
+    width: $width;
+    margin: .5em auto 1em auto;
+    text-align: left;
+    font-size: $caption-font-size;
+}
