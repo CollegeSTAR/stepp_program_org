@@ -14,7 +14,10 @@ RUN gem install bundler
 COPY Gemfile* .
 
 RUN bundle install
+RUN bundle add webrick
 
 COPY . .
+
+RUN bundle exec bourbon install --path /usr/src/app/_sass/
 
 CMD ["bash"]
