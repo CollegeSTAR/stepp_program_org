@@ -6,3 +6,5 @@ gem 'jekyll'
 gem 'bourbon'
 gem 'bitters'
 gem 'font-awesome-sass'
+
+gem "webrick", "~> 1.7"
